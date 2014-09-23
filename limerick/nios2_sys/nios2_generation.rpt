@@ -1,0 +1,80 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/temp/github/embedded/limerick/NIOS2/ --output-directory=C:/temp/github/embedded/limerick/NIOS2/nios2/ --report-file=bsf:C:/temp/github/embedded/limerick/NIOS2/nios2.bsf --system-info=DEVICE_FAMILY="Cyclone IV GX" --system-info=DEVICE=Unknown --system-info=DEVICE_SPEEDGRADE=Unknown --component-file=C:/temp/github/embedded/limerick/NIOS2/nios2.qsys
+Progress: Loading NIOS2/nios2.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding nios2 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2
+Progress: Adding spi [altera_avalon_spi 13.0.1.99.2]
+Progress: Parameterizing module spi
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: nios2.spi: spi.external must be exported, or connected to a matching conduit.
+Warning: nios2.spi: Interrupt sender spi.irq is not connected to an interrupt receiver
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/temp/github/embedded/limerick/NIOS2/ --output-directory=C:/temp/github/embedded/limerick/NIOS2/nios2/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/temp/github/embedded/limerick/NIOS2/nios2.sopcinfo --report-file=html:C:/temp/github/embedded/limerick/NIOS2/nios2.html --report-file=qip:C:/temp/github/embedded/limerick/NIOS2/nios2/synthesis/nios2.qip --report-file=cmp:C:/temp/github/embedded/limerick/NIOS2/nios2.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone IV GX" --system-info=DEVICE=Unknown --system-info=DEVICE_SPEEDGRADE=Unknown --component-file=C:/temp/github/embedded/limerick/NIOS2/nios2.qsys --language=VERILOG
+Progress: Loading NIOS2/nios2.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding nios2 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2
+Progress: Adding spi [altera_avalon_spi 13.0.1.99.2]
+Progress: Parameterizing module spi
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: nios2.spi: spi.external must be exported, or connected to a matching conduit.
+Warning: nios2.spi: Interrupt sender spi.irq is not connected to an interrupt receiver
+Info: nios2: Generating nios2 "nios2" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 3 modules, 8 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 6 modules, 20 connections
+Info: merlin_domain_transform: After transform: 11 modules, 51 connections
+Info: merlin_router_transform: After transform: 14 modules, 63 connections
+Info: reset_adaptation_transform: After transform: 15 modules, 51 connections
+Info: merlin_network_to_switch_transform: After transform: 20 modules, 61 connections
+Info: merlin_mm_transform: After transform: 20 modules, 61 connections
+Info: merlin_interrupt_mapper_transform: After transform: 21 modules, 64 connections
+Info: nios2: Starting RTL generation for module 'nios2_nios2'
+Info: nios2:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=nios2_nios2 --dir=C:/Users/lenovo/AppData/Local/Temp/alt6335_4733061938966249000.dir/0001_nios2_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/lenovo/AppData/Local/Temp/alt6335_4733061938966249000.dir/0001_nios2_gen//nios2_nios2_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: nios2: # 2014.09.22 00:00:07 (*) Starting Nios II generation
+Info: nios2: # 2014.09.22 00:00:07 (*)   Checking for plaintext license.
+Info: nios2: # 2014.09.22 00:00:10 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: nios2: # 2014.09.22 00:00:10 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2: # 2014.09.22 00:00:10 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2: # 2014.09.22 00:00:10 (*)   Plaintext license not found.
+Info: nios2: # 2014.09.22 00:00:10 (*)   No license required to generate encrypted Nios II/e.
+Info: nios2: # 2014.09.22 00:00:10 (*)   Elaborating CPU configuration settings
+Info: nios2: # 2014.09.22 00:00:10 (*)   Creating all objects for CPU
+Info: nios2: # 2014.09.22 00:00:11 (*)   Generating RTL from CPU objects
+Info: nios2: # 2014.09.22 00:00:11 (*)   Creating plain-text RTL
+Info: nios2: # 2014.09.22 00:00:13 (*) Done Nios II generation
+Info: nios2: Done RTL generation for module 'nios2_nios2'
+Info: nios2: "nios2" instantiated altera_nios2_qsys "nios2"
+Info: spi: Starting RTL generation for module 'nios2_spi'
+Info: spi:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=nios2_spi --dir=C:/Users/lenovo/AppData/Local/Temp/alt6335_4733061938966249000.dir/0002_spi_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/lenovo/AppData/Local/Temp/alt6335_4733061938966249000.dir/0002_spi_gen//nios2_spi_component_configuration.pl  --do_build_sim=0  ]
+Info: spi: Done RTL generation for module 'nios2_spi'
+Info: spi: "nios2" instantiated altera_avalon_spi "spi"
+Info: nios2_instruction_master_translator: "nios2" instantiated altera_merlin_master_translator "nios2_instruction_master_translator"
+Info: nios2_jtag_debug_module_translator: "nios2" instantiated altera_merlin_slave_translator "nios2_jtag_debug_module_translator"
+Info: nios2_instruction_master_translator_avalon_universal_master_0_agent: "nios2" instantiated altera_merlin_master_agent "nios2_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent: "nios2" instantiated altera_merlin_slave_agent "nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "nios2" instantiated altera_avalon_sc_fifo "nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "nios2" instantiated altera_merlin_router "addr_router"
+Info: id_router: "nios2" instantiated altera_merlin_router "id_router"
+Info: rst_controller: "nios2" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "nios2" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_mux: "nios2" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: "nios2" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: irq_mapper: "nios2" instantiated altera_irq_mapper "irq_mapper"
+Info: nios2: Done nios2" with 15 modules, 32 files, 580202 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
