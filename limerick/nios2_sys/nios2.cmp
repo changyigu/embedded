@@ -1,10 +1,14 @@
 	component nios2 is
 		port (
-			clk_clk  : in  std_logic                    := 'X'; -- clk
-			spi_MISO : in  std_logic                    := 'X'; -- MISO
-			spi_MOSI : out std_logic;                           -- MOSI
-			spi_SCLK : out std_logic;                           -- SCLK
-			spi_SS_n : out std_logic_vector(3 downto 0)         -- SS_n
+			clk_clk        : in    std_logic                    := 'X';             -- clk
+			spi_MISO       : in    std_logic                    := 'X';             -- MISO
+			spi_MOSI       : out   std_logic;                                       -- MOSI
+			spi_SCLK       : out   std_logic;                                       -- SCLK
+			spi_SS_n       : out   std_logic_vector(3 downto 0);                    -- SS_n
+			lcd_16207_RS   : out   std_logic;                                       -- RS
+			lcd_16207_RW   : out   std_logic;                                       -- RW
+			lcd_16207_data : inout std_logic_vector(7 downto 0) := (others => 'X'); -- data
+			lcd_16207_E    : out   std_logic                                        -- E
 		);
 	end component nios2;
 
